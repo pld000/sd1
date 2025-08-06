@@ -11,9 +11,9 @@ import org.junit.jupiter.api.Test;
 public class BankAccountTest {
     @Test()
     void bankAccountTest() {
-        int balance = 50000;
-        int depositValue = 10000;
-        int withdrawValue = 70000;
+        double balance = 50000;
+        double depositValue = 10000;
+        double withdrawValue = 70000;
         BankAccount bankAccount = new BankAccount(balance);
         Assertions.assertEquals(balance, bankAccount.getBalance(), "Wrong getBalance method");
 

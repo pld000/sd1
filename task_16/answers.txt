@@ -1,0 +1,15 @@
+Задача 1:
+Компилятор видит переменную myCat как тип Animal.
+У Animal метода makeSound() нет, поэтому программа даже не соберётся.
+
+Задача 2:
+@Override на методе makeSound(int numberOfSounds) — описан неправильно.
+В Animal такого метода нет, поэтому это не может быть переопределением (overriding).
+Ошибка компилятора:
+method does not override or implement a method from a supertype
+
+Задача 3:
+Второй try использует переменную result, которая объявлена в первом try.
+Если JSON не распарсится то result не инициализируется, и вылетит ошибка NullPointerException
+
+Попытка подключить две версии одной библиотеки 2.9.10 и 2.12.5
